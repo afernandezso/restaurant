@@ -6,6 +6,7 @@ import com.restaurant.exercise.error.RestaurantException;
 import com.restaurant.exercise.service.SaleService;
 import java.util.List;
 
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,7 +36,7 @@ public class SaleController {
      * @return new sale
      */
     @PostMapping("/new")
-    public ResponseEntity<SaleResponse> newSale(@RequestBody SaleRequest saleRequest)throws RestaurantException {
+    public ResponseEntity<SaleResponse> newSale(@Valid @RequestBody SaleRequest saleRequest)throws RestaurantException {
         return new ResponseEntity<>(saleService.newSale(saleRequest), HttpStatus.CREATED);
     }
 
