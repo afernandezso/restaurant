@@ -1,4 +1,4 @@
-package com.restaurant.exercise.login;
+package com.restaurant.exercise.controller;
 
 import com.restaurant.exercise.domain.request.UserRequest;
 import io.swagger.annotations.ApiOperation;
