@@ -1,4 +1,4 @@
-package com.restaurant.exercise.contoller;
+package com.restaurant.exercise.controller;
 
 import com.restaurant.exercise.domain.request.SaleRequest;
 import com.restaurant.exercise.domain.response.SaleResponse;

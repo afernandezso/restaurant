@@ -34,3 +34,4 @@ Se ocupa JWT para la sesión por lo que al llamar a los endpoint de new y day se
  --header 'token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2MDI4OTQwMzYsImlzcyI6IiIsInN1YiI6InVzZXJuYW1lIiwiZXhwIjoxNjAyODk1ODM2fQ.RATZwl2GV7Gx2q1CfhTWcu3-D1UCJV6pUgLNhujcwBWl5T1YdLoADdYMwTD3eQEdCDki_BnTy2QhOpxduX0eaQ' \
  --header 'Cookie: JSESSIONID=98A2720F21F15FDA1915BADDC3CDCF24'`
 
+[swagger restaurant](http://localhost:8080/swagger-ui.html#!)
