@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginController {
 
-    @ApiOperation(value = "Login",
-            notes = "create new token")
+    @ApiOperation(value = "login", notes = "create new token")
     @PostMapping(value = "/login", consumes = "application/json")
     public void fakeLogin(@RequestBody UserRequest userRequest) {
         throw new IllegalStateException("This method shouldn't be called. It's implemented by Spring Security filters.");

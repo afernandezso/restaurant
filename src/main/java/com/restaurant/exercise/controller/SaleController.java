@@ -4,6 +4,7 @@ import com.restaurant.exercise.domain.request.SaleRequest;
 import com.restaurant.exercise.domain.response.SaleResponse;
 import com.restaurant.exercise.error.RestaurantException;
 import com.restaurant.exercise.service.SaleService;
+import io.swagger.annotations.ApiOperation;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * controller sale of the restaurant
  */
+
 @RestController
 @RequestMapping("/sale")
 public class SaleController {
@@ -35,6 +37,7 @@ public class SaleController {
      * @param saleRequest data sale
      * @return new sale
      */
+    @ApiOperation(value = "new", notes = "create a new sale")
     @PostMapping("/new")
     public ResponseEntity<SaleResponse> newSale(@Valid @RequestBody SaleRequest saleRequest)throws RestaurantException {
         return new ResponseEntity<>(saleService.newSale(saleRequest), HttpStatus.CREATED);
@@ -45,6 +48,7 @@ public class SaleController {
      *
      * @return list all day of sale
      */
+    @ApiOperation(value = "day", notes = "get all the sales of the day")
     @GetMapping("/day")
     public ResponseEntity<List<SaleResponse>> getSales() throws RestaurantException {
         return new ResponseEntity<>(saleService.getSales(), HttpStatus.OK);
