@@ -25,5 +25,6 @@ body :
 - ventas del día Get `http://localhost:8080/sale/day`
  <br>
  <br>
- ### swagger API Restaurant 
+ ### swagger API Restaurant  
+ <br>
 [swagger restaurant](http://localhost:8080/swagger-ui.html#!)
